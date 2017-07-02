@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_mainhome_show"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/line_mainhome_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fcfcfc"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/layout_container_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="onTabClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home_home_up"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/bottom_bar_home_pressed" />
+
+                <TextView
+                    android:id="@+id/tv_home_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="首页"
+                    android:textColor="#fe6e6e"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_container_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="onTabClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home_food_up"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/bottom_bar_home_pressed" />
+
+                <TextView
+                    android:id="@+id/tv_home_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="美食"
+                    android:textColor="#737373"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_container_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="onTabClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home_order_up"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/bottom_bar_home_pressed" />
+
+                <TextView
+                    android:id="@+id/tv_home_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="订单"
+                    android:textColor="#737373"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_container_personalcenter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="onTabClicked"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_home_personal_up"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@mipmap/bottom_bar_home_pressed" />
+
+                <TextView
+                    android:id="@+id/tv_home_personal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:text="我的"
+                    android:textColor="#737373"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 切换界面 -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+
+</RelativeLayout>
