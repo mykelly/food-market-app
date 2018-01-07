@@ -49,7 +49,7 @@ public class MainActivity extends BaseActivity {
         if (fragments[0] == null) {
             fragments[0] = new HomeFragment();
         }
-        // 添加显示第一个fragment jkkkkkkkk
+        // 添加显示第一个fragment jkkkkkkkkpppppppp
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, fragments[0], fragments_name[0]).show(fragments[0]).commitAllowingStateLoss();
     }
 
